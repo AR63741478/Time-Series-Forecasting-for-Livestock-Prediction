@@ -38,9 +38,9 @@ def show_graph():
 
     plt.figure(figsize=(10, 6))
     sns.lineplot(data=filter_data, x='ds', y=Livestock)
-    plt.title(f'{Livestock} Slaughtered in {Country} Over Time')
+    plt.title(f'{Livestock}s Slaughtered in {Country} Over Time')
     plt.xlabel('Year')
-    plt.ylabel(f'Number of {Livestock}')
+    plt.ylabel(f'Number of {Livestock}s')
     plt.show()
 
 
