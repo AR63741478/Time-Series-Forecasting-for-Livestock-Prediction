@@ -92,7 +92,6 @@ def predict():
     predict = predict.reset_index()
     predict = predict.rename(columns={'unique_id': 'Country', 'ds': 'Year', 'OptimizedTheta': 'Prediction'})
     predict.index = predict.index + 1
-    predict['OptimizedTheta'] = predict['OptimizedTheta'].astype(int)
     return predict
 
 show_graph()
